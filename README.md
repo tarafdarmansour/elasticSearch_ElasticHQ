@@ -11,6 +11,8 @@ docker-compose -f .\docker-compose-3nodes.yml up
 ````
 docker-compose -f .\docker-compose-singlenode.yml up
 ````
+to connect elasticsearch in ElasticHQ first page you should address elasticsearch servicename
+![alt text](https://github.com/tarafdarmansour/elasticSearch_ElasticHQ/blob/main/readmeimages/ElasticHQ_singlenode.png "ElasticHQ first page configuration")
 
 
 
