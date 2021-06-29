@@ -21,12 +21,12 @@ to connect elasticsearch in ElasticHQ first page you should address elasticsearc
 
 ## To JUST run elasticSearch whith single node 
 ````
-docker run --name elasticsearch_container -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.12.1
+docker run --name elasticsearch_container -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.12.1
 ````
 
 ## To JUST run  ElasticHQ
 ````
-docker run --name elasticsearch-hq_container -p 5000:5000 elastichq/elasticsearch-hq
+docker run --name elasticsearch-hq_container -d -p 5000:5000 elastichq/elasticsearch-hq
 ````
 to connect elasticsearch in ElasticHQ first page you should address elasticsearch on localhost than is host.docker.internal
 ![alt text](https://github.com/tarafdarmansour/elasticSearch_ElasticHQ/blob/main/readmeimages/ElasticHQ_host.png "ElasticHQ first page configuration for localhost")
